@@ -1,0 +1,62 @@
+eureka:
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://naming-server:8761/eureka
+    instance:
+        preferIpAddress: true
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+
+server:
+    port: 8765
+spring:
+    application:
+        name: api-gateway
+    cloud:
+        discovery:
+            enabled: true
+        gateway:
+            httpclient:
+                wiretap: true
+                httpserver:
+                    wiretap: true
+            globalcors:
+                cors-configurations:
+                    '[/**]':
+                        allowedOrigins:
+                            - '*'
+                        allowedHeaders:
+                            - '*'
+                        exposedHeaders:
+                            - '*'
+                        allowedMethods:
+                            - GET
+                            - POST
+                            - OPTIONS
+            discovery:
+                locator:
+                    enabled: true
+                    lower-case-service-id: true
+            metrics:
+                enabled: true
+    springframework:
+        boot:
+            logging:
+                LogLevel: debug
+
+
+
+logging:
+    level:
+        reactor:
+            netty: INFO
+        org:
+            springframework:
+                cloud:
+                    gateway: INFO
+
