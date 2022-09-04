@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 
 @Data
 @SuperBuilder
@@ -15,5 +17,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Entity extends Core{
     private Attribute[] attributes;
 //    private Relationship[] relationships;
-    private Entity entity;
+//    private Entity entity;
+    private List<Entity> entityList;
 }

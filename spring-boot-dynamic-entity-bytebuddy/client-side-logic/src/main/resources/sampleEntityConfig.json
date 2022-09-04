@@ -1,0 +1,45 @@
+{
+  "identifier": "fd01994e-3d74-4548-ae7d-c28121a97d93",
+  "name": "Account",
+  "namespace": "com.namespace",
+  "attributes": [
+    {
+      "identifier": "034a4113-c972-41ac-80a6-44ed4e1cb8c6",
+      "name": "Name",
+      "type": "String"
+    },
+    {
+      "identifier": "f1cecffc-55dd-4295-97a7-681a4c932a34",
+      "name": "Email",
+      "type": "String"
+    },
+    {
+      "identifier": "8edb3558-4437-4f26-bbdf-d879ba1907b4",
+      "name": "ActiveFlag",
+      "type": "Boolean"
+    }
+  ],
+  "entity": {
+    "identifier": "6b60fe7a-96df-46ac-8a28-ce84f62b455a",
+    "name": "Address",
+    "namespace": "com.namespace",
+    "attributes": [
+      {
+        "identifier": "966510ff-a9c1-4b85-9443-2347e1c0b23f",
+        "name": "AddressLine1",
+        "type": "String"
+      },
+      {
+        "identifier": "88916a63-604d-4504-9cac-1580721f3c1b",
+        "name": "Pincode",
+        "type": "Integer"
+      },
+      {
+        "identifier": "625ffcfd-a5bb-4cc1-bc76-222d5b6c0bf2",
+        "name": "City",
+        "type": "String"
+      }
+    ],
+    "entity": null
+  }
+}
