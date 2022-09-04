@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.UUID;
 
 @Data
-public class EntityTemplate  {
+public class EntityTemplate {
 
     protected UUID identifier;
     protected String name;

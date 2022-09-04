@@ -1,0 +1,87 @@
+[
+  {
+    "identifier": "acfd8e82-6cbf-4df8-9b63-a94fb83ac314",
+    "name": "Account",
+    "namespace": "com.namespace",
+    "attributes": [
+      {
+        "identifier": "9e480448-e9bf-416b-a54d-fed1f663d0eb",
+        "name": "Name",
+        "type": "String"
+      },
+      {
+        "identifier": "f267d331-e1c8-408e-ae0e-d78ae906754f",
+        "name": "Email",
+        "type": "String"
+      },
+      {
+        "identifier": "e231eddc-d67b-45b3-aa16-bbae5145139a",
+        "name": "ActiveFlag",
+        "type": "Long"
+      }
+    ],
+    "entityList": [
+      {
+        "identifier": "01d7555c-36bf-4377-a004-94c75ca6b418",
+        "name": "Address",
+        "namespace": "com.namespace",
+        "attributes": [
+          {
+            "identifier": "ee05e38e-ba01-406b-bcaf-ac06f06d4023",
+            "name": "AddressLine1",
+            "type": "String"
+          },
+          {
+            "identifier": "e0f538f0-b30e-480f-aead-d6abcb6d2542",
+            "name": "Pincode",
+            "type": "Integer"
+          },
+          {
+            "identifier": "9ce9f4e4-60b2-4302-aedc-85e9566500df",
+            "name": "City",
+            "type": "String"
+          },
+          {
+            "identifier": "9329705c-2f9f-459d-a1c6-1eb7539414a7",
+            "name": "CardName",
+            "type": "String"
+          },
+          {
+            "identifier": "5b3e1ead-1a71-436a-b285-ad0de5ed1ca8",
+            "name": "CVV",
+            "type": "Integer"
+          },
+          {
+            "identifier": "2f684d75-47f1-42ad-b943-3748fc490975",
+            "name": "cardNumber",
+            "type": "String"
+          }
+        ],
+        "entityList": null
+      },
+      {
+        "identifier": "3ab3dd53-0761-43f3-bb15-2ff54a7fc24c",
+        "name": "PaymentDetails",
+        "namespace": "com.namespace",
+        "attributes": [
+          {
+            "identifier": "ee05e38e-ba01-406b-bcaf-ac06f06d4023",
+            "name": "AddressLine1",
+            "type": "String"
+          },
+          {
+            "identifier": "e0f538f0-b30e-480f-aead-d6abcb6d2542",
+            "name": "Pincode",
+            "type": "Integer"
+          },
+          {
+            "identifier": "9ce9f4e4-60b2-4302-aedc-85e9566500df",
+            "name": "City",
+            "type": "String"
+          }
+        ],
+        "entityList": null
+      }
+    ]
+  }
+]

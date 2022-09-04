@@ -18,6 +18,7 @@ import java.util.Optional;
 @Configuration
 public class DynamicJpaBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
+
     private static final Logger LOG = LoggerFactory.getLogger(DynamicJpaBeanFactoryPostProcessor.class);
 
     private static final String ENTITY_CLASS_NAME = "Entity";
@@ -48,21 +49,7 @@ public class DynamicJpaBeanFactoryPostProcessor implements BeanFactoryPostProces
         registerJpaRepositoryFactoryBean(repoClass.get(), (DefaultListableBeanFactory) beanFactory);
     }
 
-    /**
-     * Registers a {@link SimpleMongoClientDatabaseFactory} similar to below:
-     *
-     * <pre>
-     * &#64;Bean
-     * public JpaRepositoryFactoryBean<BookDao, Book, Integer> bookRepository() {
-     *     return new JpaRepositoryFactoryBean<>(BookDao.class);
-     * }
-     * </pre>
-     *
-     * Since the generic arguments are not necessary, these are ignored.
-     *
-     * @param jpaRepositoryClass
-     * @param defaultListableBeanFactory
-     */
+
     private void registerJpaRepositoryFactoryBean(Class<?> jpaRepositoryClass,
                                                   DefaultListableBeanFactory defaultListableBeanFactory) {
         String beanName = jpaRepositoryClass.getSimpleName();
