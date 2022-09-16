@@ -6,3 +6,4 @@ public interface IFactory<T>
 {
     T newObject(String[] split);
 }
+    
